@@ -27,11 +27,13 @@ public class ApplicationController : MonoBehaviour
         }
         else
         {
+            HostSingleton hostSingleton = Instantiate(hostPrefab); // Instantiate the host singleton
+            hostSingleton.CreateHost(); // Create the host
+
+
             ClientSingleton clientSingleton = Instantiate(clientPrefab); // Instantiate the client singleton
             await clientSingleton.CreateClient(); // Create the client asynchronously
 
-            HostSingleton hostSingleton = Instantiate(hostPrefab); // Instantiate the host singleton
-            hostSingleton.CreateHost(); // Create the host
 
             // Logic to navigate to the main menu can be added here
         }

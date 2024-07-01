@@ -92,7 +92,7 @@ public class ProjectileLauncher : NetworkBehaviour
     {
         if (wallet.TotalCoins.Value < costToFire) { return; } // Check if the player has enough coins to fire
 
-        wallet.SpendCoins(costToFire); // Deduct the cost to fire from the player's wallet
+        //wallet.SpendCoins(costToFire); // Deduct the cost to fire from the player's wallet
 
         // Instantiate the projectile on the server
         GameObject projectileInstance = Instantiate(

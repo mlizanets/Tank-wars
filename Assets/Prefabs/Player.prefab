@@ -94,15 +94,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3620867915679679722}
   - component: {fileID: 2839859707554703558}
-  - component: {fileID: 6126025796645319279}
-  - component: {fileID: 6221383963568269115}
-  - component: {fileID: 8200293716513122286}
   - component: {fileID: 5388875475617079916}
   - component: {fileID: 1545623939542692639}
-  - component: {fileID: 3679238718543738641}
-  - component: {fileID: 8255367926869225698}
-  - component: {fileID: 5383920461674819674}
-  - component: {fileID: 8699286378308072440}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -180,67 +173,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6126025796645319279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149916921864850232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10b3ec3ba06d9d84d993d8f5a2d8b1dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputReader: {fileID: 11400000, guid: 55376fb172b40e44a8ba56db76a5a48d, type: 2}
-  turretTransform: {fileID: 3862053460792733682}
---- !u!114 &6221383963568269115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149916921864850232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8b86d3b8d211254d8ad725e4214f1a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 0
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  UseQuaternionSynchronization: 0
-  UseQuaternionCompression: 0
-  UseHalfFloatPrecision: 0
-  InLocalSpace: 0
-  Interpolate: 1
-  SlerpPosition: 0
---- !u!114 &8200293716513122286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149916921864850232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff0e0501819cb494aa4c473f8f3efd95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputReader: {fileID: 11400000, guid: 55376fb172b40e44a8ba56db76a5a48d, type: 2}
-  bodyTransform: {fileID: 6050117938091877221}
-  rb: {fileID: 5388875475617079916}
-  movementSpeed: 4
-  turningRate: 30
 --- !u!50 &5388875475617079916
 Rigidbody2D:
   serializedVersion: 4
@@ -287,70 +219,6 @@ MonoBehaviour:
   SceneMigrationSynchronization: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &3679238718543738641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149916921864850232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08f00ac60f172540861a4d7ee5ba6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputReader: {fileID: 11400000, guid: 55376fb172b40e44a8ba56db76a5a48d, type: 2}
-  projectileSpawnPoint: {fileID: 4574111538101811457}
-  serverProjectilePrefab: {fileID: 8218922883979906417, guid: 3c666c92b7010e2479c1cb4967ff34ac, type: 3}
-  clientProjectilePrefab: {fileID: 3662069029882386499, guid: 75c3d142694f7a141ae1586726ffcf10, type: 3}
-  muzzleFlash: {fileID: 3198858564434711183}
-  playerCollider: {fileID: 1031608267390995993}
-  projectileSpeed: 30
-  fireRate: 0
-  muzzleFlashDuration: 0.01
---- !u!114 &8255367926869225698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149916921864850232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a8df9849ed4828438065a71589cc0b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <MaxHealth>k__BackingField: 100
-  CurrentHealth:
-    m_InternalValue: 100
---- !u!114 &5383920461674819674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149916921864850232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 473ebe7344659c54a9dafc24724574a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: {fileID: 0}
-  healthBarImage: {fileID: 0}
---- !u!114 &8699286378308072440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149916921864850232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdf7ac3e473e0034da8121ee111d06bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TotalCoins:
-    m_InternalValue: 0
 --- !u!1 &3198858564434711183
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,7 +659,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6050117938091877221}
-  - component: {fileID: 5105616863495573457}
   - component: {fileID: 1031608267390995993}
   m_Layer: 7
   m_Name: Tracks
@@ -818,36 +685,6 @@ Transform:
   m_Father: {fileID: 3620867915679679722}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5105616863495573457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5302257936082092642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8b86d3b8d211254d8ad725e4214f1a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 0
-  SyncPositionY: 0
-  SyncPositionZ: 0
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 1
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  UseQuaternionSynchronization: 0
-  UseQuaternionCompression: 0
-  UseHalfFloatPrecision: 0
-  InLocalSpace: 0
-  Interpolate: 1
-  SlerpPosition: 0
 --- !u!61 &1031608267390995993
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1101,7 +938,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4574111538101811457}
-  - component: {fileID: 8132848484323059142}
   m_Layer: 0
   m_Name: ProjectileSpawnPoint
   m_TagString: Untagged
@@ -1124,20 +960,6 @@ Transform:
   m_Father: {fileID: 5917301520463351107}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8132848484323059142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6365458624182663392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10b3ec3ba06d9d84d993d8f5a2d8b1dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputReader: {fileID: 0}
-  turretTransform: {fileID: 0}
 --- !u!1 &7548327393543850802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,8 +969,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3862053460792733682}
-  - component: {fileID: 890395277287327424}
-  - component: {fileID: 8258915591929095824}
   m_Layer: 8
   m_Name: Tower
   m_TagString: Untagged
@@ -1175,50 +995,6 @@ Transform:
   m_Father: {fileID: 3620867915679679722}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.617}
---- !u!114 &890395277287327424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7548327393543850802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8b86d3b8d211254d8ad725e4214f1a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 0
-  SyncPositionY: 0
-  SyncPositionZ: 0
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 1
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  UseQuaternionSynchronization: 0
-  UseQuaternionCompression: 0
-  UseHalfFloatPrecision: 0
-  InLocalSpace: 0
-  Interpolate: 1
-  SlerpPosition: 0
---- !u!114 &8258915591929095824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7548327393543850802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10b3ec3ba06d9d84d993d8f5a2d8b1dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputReader: {fileID: 11400000, guid: 55376fb172b40e44a8ba56db76a5a48d, type: 2}
-  turretTransform: {fileID: 3862053460792733682}
 --- !u!1 &7737157658311245774
 GameObject:
   m_ObjectHideFlags: 0
