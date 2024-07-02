@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8720224212911392460}
   - component: {fileID: 6337566676175908857}
   - component: {fileID: 4437246461290084150}
-  - component: {fileID: 2320045040671683670}
   m_Layer: 0
   m_Name: Network Manager
   m_TagString: Untagged
@@ -26,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3586526393945473238}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6337566676175908857
 MonoBehaviour:
@@ -46,12 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593a2fe42fa9d37498c96f9a383b6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RunInBackground: 1
-  LogLevel: 1
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 4437246461290084150}
-    PlayerPrefab: {fileID: 0}
+    PlayerPrefab: {fileID: 2149916921864850232, guid: 9c105e2a8e2ec1d4ebd12ad8f7049d49, type: 3}
     Prefabs:
       NetworkPrefabsLists:
       - {fileID: 11400000, guid: 3ad8d2bc511a82c41986796e54473a3c, type: 2}
@@ -71,6 +68,8 @@ MonoBehaviour:
     SpawnTimeout: 1
     EnableNetworkLogs: 1
     OldPrefabList: []
+  RunInBackground: 1
+  LogLevel: 1
 --- !u!114 &4437246461290084150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,33 +97,3 @@ MonoBehaviour:
     PacketDelayMS: 0
     PacketJitterMS: 0
     PacketDropRate: 0
---- !u!114 &2320045040671683670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3586526393945473238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  UseQuaternionSynchronization: 0
-  UseQuaternionCompression: 0
-  UseHalfFloatPrecision: 0
-  InLocalSpace: 0
-  Interpolate: 1
-  SlerpPosition: 0

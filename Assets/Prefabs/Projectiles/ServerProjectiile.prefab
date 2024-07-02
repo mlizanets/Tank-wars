@@ -57,7 +57,8 @@ PrefabInstance:
       value: ServerProjectiile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 9082473732228841453, guid: 75c3d142694f7a141ae1586726ffcf10, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3662069029882386499, guid: 75c3d142694f7a141ae1586726ffcf10, type: 3}
